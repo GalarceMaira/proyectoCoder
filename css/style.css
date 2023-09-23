@@ -1,0 +1,702 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos para el Body */
+
+body {
+    background-image: url(https://img.freepik.com/foto-gratis/muro-hormigon-negro_24972-1046.jpg?w=740&t=st=1692930127~exp=1692930727~hmac=733f43002db68dbe420d265ca0cdd0f10fec831e48891965f62d45f4a30a948f);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    font-family: 'Yuji Syuku', serif;
+    display: grid;
+    min-height: 100vh;
+    grid-template-rows: auto 1fr auto;
+}
+
+/* Fin de estilos para el Body */
+
+/* Estilos para barras de navegación */
+
+nav ul li {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+nav ul li a {
+    padding: 10px;
+}
+
+.cajaBarra {
+    background-color: rgba(80, 78, 78, 0.4);
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin: 40px;
+    border: 2px inset rgba(80, 78, 78, 0.4);
+    border-radius: 10px;
+    height: 250px;
+    width: 150px;
+}
+
+/* Fin de estilos barra de navegación */
+
+/* Estilos para los links */
+
+.linksVerdes {
+    color: #0add8cea;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+.linksVioleta {
+    color: rgb(167, 139, 192);
+    list-style-type: none;
+    text-decoration: none;
+}
+
+.linksVerdes:hover {
+    color: #037047ea;
+}
+
+/* Fin de estilos para los links */
+
+/* Estilos para las fuentes */
+
+.fuenteVioleta {
+    color: rgb(154, 46, 255);
+}
+
+.fuenteVerde {
+    color: #0ab976ea;
+}
+
+/* Fin de estilos para las fuentes */
+
+.cajasTransparentes {
+    background-color: rgba(80, 78, 78, 0.4);
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin: 20px;
+    border: 2px inset rgba(80, 78, 78, 0.4);
+    border-radius: 10px;
+    height: 400px;
+    width: 600px;
+}
+
+/* Estilos para el contenido de las páginas */
+
+/* Página index */
+
+.propiedadGrid {
+    display: grid;
+    grid-template-areas: 'nav' 'novedades'
+        'nav' 'novedades'
+        'autor' 'autor'
+        'pie' 'pie';
+    grid-template-columns: 20% 40% 50%;
+
+
+    .c1 {
+        grid-area: nav;
+    }
+
+    .c2 {
+        grid-area: novedades;
+    }
+
+    .c3 {
+        grid-area: autor;
+    }
+
+    .c4 {
+        grid-area: pie;
+    }
+
+}
+
+.cajasTransparentesNovedades {
+    background-color: rgba(80, 78, 78, 0.3);
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin: 45px;
+    border: 2px inset rgba(80, 78, 78, 0.4);
+    border-radius: 10px;
+    height: 950px;
+    width: 800px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.tituloNovedades {
+    padding: 50px;
+    text-align: center;
+    font-size: 40px;
+}
+
+.imagenTapa {
+    padding: 25px;
+}
+
+.resumenLibro {
+    padding: 20px;
+    text-align: center;
+    font-size: 15px;
+}
+
+.cajaTransparenteAutor {
+    background-color: rgba(80, 78, 78, 0.3);
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin: 20px;
+    border: 2px inset rgba(80, 78, 78, 0.4);
+    border-radius: 10px;
+    height: 150px;
+    width: 841px;
+    display: flex;
+    flex-direction: row;
+}
+
+.resumenAutor {
+    font-size: 15px;
+    text-align: right;
+    padding: 15px;
+}
+
+.fotoAutor {
+    border: 1px solid rgb(55, 55, 56);
+    border-radius: 120px;
+    width: 120px;
+    height: 120px;
+    padding: 5px;
+}
+
+/* Fin de estilos página index */
+
+/* Estilos para página Biografía */
+
+.propiedadGridBio {
+    display: grid;
+    grid-template-areas: 'nav' 'bio'
+        'nav' 'bio'
+        'nav' 'bio'
+        'pie' 'pie';
+    grid-template-columns: 20% 40% 50%;
+
+    .b1 {
+        grid-area: nav;
+    }
+
+    .b2 {
+        grid-area: bio;
+    }
+
+    .b3 {
+        grid-area: pie;
+    }
+
+}
+
+.cajaTransparenteBiografia {
+    background-color: rgba(80, 78, 78, 0.3);
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 40px;
+    border: 2px inset rgba(80, 78, 78, 0.4);
+    border-radius: 10px;
+    height: 960px;
+    width: 800px;
+}
+
+.tituloBiografia {
+    font-size: 40px;
+    text-align: center;
+    padding: 50px;
+}
+
+.imgAutora {
+    padding: 25px;
+    text-align: center;
+}
+
+.bordeRedondeado {
+    border: 1px rgba(165, 162, 162, 0.3);
+    border-radius: 20px;
+}
+
+.textoBio {
+    font-size: 25px;
+    text-align: justify;
+    padding: 30px;
+}
+
+/* Fin de estilos para página Biografía */
+
+/* Estilos para página Obras */
+
+.propiedadGridObras {
+    display: grid;
+    grid-template-areas: 'nav' 'obra'
+        'nav' 'obra'
+        'nav' 'obra'
+        'pie' 'pie';
+    grid-template-columns: 20% 40% 50%;
+
+    .o1 {
+        grid-area: nav;
+    }
+
+    .o2 {
+        grid-area: obra;
+    }
+
+    .o3 {
+        grid-area: pie;
+    }
+
+}
+
+.cajaTransparenteObras {
+    background-color: rgba(80, 78, 78, 0.3);
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin: 40px;
+    border: 2px inset rgba(80, 78, 78, 0.4);
+    border-radius: 10px;
+    height: 950px;
+    width: 900px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.tituloObras {
+    font-size: 40px;
+    text-align: center;
+    padding: 40px;
+}
+
+.estilosTapaObras {
+    padding: 15px;
+}
+
+.estilosParraObras {
+    font-size: 17px;
+    text-align: justify;
+    padding: 20px;
+    margin: 5px;
+}
+
+.estilosLinksObras {
+    padding: 5px;
+}
+
+.estilosLinksObras:hover {
+    color: rgb(138, 102, 170);
+}
+
+/* Fin de estilos para páginas Obras */
+
+/* Estilos para página Contacto */
+
+.propiedadGridContacto {
+    display: grid;
+    grid-template-areas: 'nav' 'contacto'
+        'nav' 'contacto'
+        'nav' 'contacto'
+        'pie' 'pie';
+    grid-template-columns: 20% 40% 50%;
+
+    .cont1 {
+        grid-area: nav;
+    }
+
+    .cont2 {
+        grid-area: contacto;
+    }
+
+    .cont3 {
+        grid-area: pie;
+    }
+
+}
+
+.cajaTransparenteContacto {
+    background-color: rgba(80, 78, 78, 0.3);
+    padding: 40px;
+    margin: 40px;
+    border: 2px inset rgba(80, 78, 78, 0.4);
+    border-radius: 10px;
+    height: 1000px;
+    width: 900px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cajaRedes {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 30px;
+
+
+}
+
+.iconosRedes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 12px;
+    margin: 12px;
+}
+
+.tituloContacto {
+    padding: 25px;
+}
+
+.cajaFormulario {
+    padding: 40px;
+    margin: 10px;
+}
+
+/* Estilos para el formulario */
+
+form {
+    padding: 40px 55px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    text-align: center;
+    width: 340px;
+    height: 580px;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+label {
+    color: blueviolet;
+    font-family: 'Yuji Syuku', serif;
+    padding: 5px;
+}
+
+input,
+textarea {
+    font-family: 'Yuji Syuku', serif;
+    padding: 5px 10px;
+    border-radius: 25px;
+    margin-bottom: 10px;
+    background-color: rgb(223, 192, 253);
+    border: 2px solid rgb(235, 197, 250);
+    color: blueviolet;
+    outline: none;
+}
+
+input::placeholder,
+textarea::placeholder {
+    color: rgb(191, 160, 221);
+}
+
+.btn {
+    font-family: 'Yuji Syuku', serif;
+    font-weight: bold;
+    font-size: 15px;
+    color: blueviolet;
+    padding: 10px;
+    border: 0;
+    border-radius: 25px;
+    background-color: rgb(202, 150, 255);
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: rgb(186, 139, 233);
+}
+
+.formuTitulo {
+    padding: 10px;
+}
+
+/* Fin de estilos formulario */
+
+/* Fin de estilos para página Contacto */
+
+/* Estilos para página UI */
+
+.propiedadGridUI {
+    display: grid;
+    grid-template-areas: 'nav' 'ui'
+        'nav' 'ui'
+        'nav' 'ui'
+        'pie' 'pie';
+    grid-template-columns: 20% 40% 50%;
+
+    .ui1 {
+        grid-area: nav;
+    }
+
+    .ui2 {
+        grid-area: ui;
+    }
+
+    .ui3 {
+        grid-area: pie;
+    }
+
+}
+
+.cajaTransparenteUI {
+    background-color: rgba(80, 78, 78, 0.3);
+    padding: 40px;
+    margin: 40px;
+    border: 2px inset rgba(80, 78, 78, 0.4);
+    border-radius: 10px;
+    height: 1000px;
+    width: 900px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.tituloUI {
+    font-size: 40px;
+    text-align: center;
+    padding: 40px;
+}
+
+.estilosParraUI {
+    font-size: 17px;
+    text-align: justify;
+    padding: 20px;
+    margin: 5px;
+}
+
+.estilosLinksUI {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.estilosLinksUI:hover {
+    color: rgb(138, 102, 170);
+}
+
+/* Fin de estulos para página UI */
+
+/* Estilos para el footer */
+
+.footer {
+    padding: 1em 0;
+    text-align: center;
+    margin-top: 20px;
+    background-color: rgba(80, 78, 78, 0.4);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border: 2px inset rgba(80, 78, 78, 0.4);
+
+}
+
+/* Tablet */
+
+@media screen and (max-width: 768px) {
+    /* Tablet Página Inicio*/
+
+    .propiedadGrid {
+        display: grid;
+        grid-template-areas: 'nav' 'nav'
+            'novedades' 'novedades'
+            'autor' 'autor'
+            'pie' 'pie';
+        grid-template-columns: 100%;
+
+
+        .c1 {
+            grid-area: nav;
+        }
+
+        .c2 {
+            grid-area: novedades;
+        }
+
+        .c3 {
+            grid-area: autor;
+        }
+
+        .c4 {
+            grid-area: pie;
+        }
+
+    }
+
+    ul {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        list-style: none;
+    }
+
+    body {
+        background-image: url(https://img.freepik.com/foto-gratis/muro-hormigon-negro_24972-1046.jpg?w=740&t=st=1692930127~exp=1692930727~hmac=733f43002db68dbe420d265ca0cdd0f10fec831e48891965f62d45f4a30a948f);
+        background-repeat: no-repeat;
+        background-size: cover;
+        font-family: 'Yuji Syuku', serif;
+        display: block;
+    }
+
+    /* Tablet Página UI */
+
+    .propiedadGridUI {
+        display: grid;
+        grid-template-areas: 'nav' 'nav'
+            'ui' 'ui'
+            'ui' 'ui'
+            'pie' 'pie';
+        grid-template-columns: 20% 40% 50%;
+
+        .ui1 {
+            grid-area: nav;
+        }
+
+        .ui2 {
+            grid-area: ui;
+        }
+
+        .ui3 {
+            grid-area: pie;
+        }
+
+    }
+
+    ul {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        list-style: none;
+    }
+
+    body {
+        background-image: url(https://img.freepik.com/foto-gratis/muro-hormigon-negro_24972-1046.jpg?w=740&t=st=1692930127~exp=1692930727~hmac=733f43002db68dbe420d265ca0cdd0f10fec831e48891965f62d45f4a30a948f);
+        background-repeat: no-repeat;
+        background-size: cover;
+        font-family: 'Yuji Syuku', serif;
+        display: block;
+    }
+}
+
+/* Fin de Tablet */
+
+/* Mobile Página Inicio*/
+
+@media screen and (max-width: 480px) {
+
+    .propiedadGrid {
+        display: grid;
+        grid-template-areas: 'nav'
+            'novedades'
+            'autor'
+            'pie';
+        grid-template-columns: 100%;
+
+
+
+        .c1 {
+            grid-area: nav;
+        }
+
+        .c2 {
+            grid-area: novedades;
+        }
+
+        .c3 {
+            grid-area: autor;
+        }
+
+        .c4 {
+            grid-area: pie;
+        }
+
+    }
+
+    ul {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        list-style: none;
+    }
+
+    body {
+        background-image: url(https://img.freepik.com/foto-gratis/muro-hormigon-negro_24972-1046.jpg?w=740&t=st=1692930127~exp=1692930727~hmac=733f43002db68dbe420d265ca0cdd0f10fec831e48891965f62d45f4a30a948f);
+        background-repeat: no-repeat;
+        background-size: cover;
+        font-family: 'Yuji Syuku', serif;
+        display: block;
+    }
+
+    /* Mobile página UI */
+
+    @media screen and (max-width: 480px) {
+
+
+        .propiedadGridUI {
+            display: grid;
+            grid-template-areas: 'nav'
+                'ui'
+                'ui'
+                'pie';
+            grid-template-columns: 100%;
+
+            .ui1 {
+                grid-area: nav;
+            }
+
+            .ui2 {
+                grid-area: ui;
+            }
+
+            .ui3 {
+                grid-area: pie;
+            }
+
+        }
+
+    }
+
+    ul {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        list-style: none;
+    }
+
+    body {
+        background-image: url(https://img.freepik.com/foto-gratis/muro-hormigon-negro_24972-1046.jpg?w=740&t=st=1692930127~exp=1692930727~hmac=733f43002db68dbe420d265ca0cdd0f10fec831e48891965f62d45f4a30a948f);
+        background-repeat: no-repeat;
+        background-size: cover;
+        font-family: 'Yuji Syuku', serif;
+        display: block;
+    }
+
+}
